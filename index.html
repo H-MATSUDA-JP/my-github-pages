@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マインスイーパー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💣 マインスイーパー</h1>
+            <p class="subtitle">10×10 グリッド | 地雷: 15個</p>
+        </header>
+        
+        <div class="game-info">
+            <div class="info-box">
+                <span class="icon">🚩</span>
+                <span id="flags-count">15</span>
+            </div>
+            <button id="reset-btn" class="reset-btn">🔄 リセット</button>
+            <div class="info-box">
+                <span class="icon">⏱️</span>
+                <span id="timer">0</span>
+            </div>
+        </div>
+        
+        <div id="game-board" class="game-board"></div>
+        
+        <div id="game-message" class="game-message"></div>
+        
+        <div class="instructions">
+            <h3>遊び方</h3>
+            <ul>
+                <li><strong>左クリック:</strong> セルを開く</li>
+                <li><strong>右クリック:</strong> フラグを立てる/外す</li>
+                <li><strong>目標:</strong> 地雷以外の全てのセルを開く</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
